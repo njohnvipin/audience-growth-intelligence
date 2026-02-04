@@ -1,0 +1,26 @@
+# --- Secrets ---
+.env
+
+# --- Python ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+*.sqlite3
+
+# --- Virtual envs ---
+dmenv/
+venv/
+.envrc
+
+# --- OS / Editor ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# --- Data dumps (optional) ---
+data/raw/
+data/processed/
+*.json
