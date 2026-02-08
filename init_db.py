@@ -19,7 +19,7 @@ def main():
                 cur.execute(f.read())
         conn.commit()
 
-    print("✅ Database initialized (schemas + tables created).")
+    print("Database initialized (schemas + tables created).")
 
 if __name__ == "__main__":
     main()
