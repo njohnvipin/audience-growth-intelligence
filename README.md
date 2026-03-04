@@ -23,7 +23,6 @@ The objectives of this project are:
 - Compute KPIs such as engagement rate and growth trends
 - Demonstrate OLTP to OLAP data flow using a real-world platform
 
----
 
 ## Project Scope
 
@@ -38,7 +37,6 @@ Not included in current implementation:
 - Private YouTube Studio analytics (OAuth)
 - LLMs or voice cloning (planned as future enhancements)
 
----
 
 ## Technology Stack
 
