@@ -1,5 +1,6 @@
+CREATE SCHEMA IF NOT EXISTS warehouse;
 
-CREATE TABLE warehouse.dim_date (
+CREATE TABLE IF NOT EXISTS warehouse.dim_date (
     date_id     INTEGER PRIMARY KEY,          -- 20260203
     date_value  DATE NOT NULL,                -- 2026-02-03
     year        INTEGER NOT NULL,
@@ -7,7 +8,7 @@ CREATE TABLE warehouse.dim_date (
     day         INTEGER NOT NULL
 );
 
-CREATE TABLE warehouse.dim_video (
+CREATE TABLE IF NOT EXISTS warehouse.dim_video (
     video_sk SERIAL PRIMARY KEY,
     video_id VARCHAR(50) NOT NULL UNIQUE,
     title TEXT,
@@ -17,7 +18,7 @@ CREATE TABLE warehouse.dim_video (
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
-CREATE TABLE warehouse.fact_video_snapshot_daily (
+CREATE TABLE IF NOT EXISTS warehouse.fact_video_snapshot_daily (
     date_id        INTEGER NOT NULL,
     video_sk       INTEGER NOT NULL,
     view_count     BIGINT NOT NULL DEFAULT 0,
